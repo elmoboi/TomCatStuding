@@ -13,7 +13,7 @@ import java.util.Arrays;
 @WebServlet(value = "/answer")
 public class AnswerServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         validAnswer(req, resp);
     }
 

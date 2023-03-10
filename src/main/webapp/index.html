@@ -5,12 +5,33 @@
     <title>ServletsStuding</title>
 </head>
 <body>
-    <form class="oleg" method="post" action="answer">
+    <form class="oleg" method="get" action="answer">
         <p>Вопрос: сколько значений принимает тип boolean</p>
         <input type="checkbox" name="c1" value="1"><b>1</b></input><br/>
         <input type="checkbox" name="c1" value="2"><b>2</b></input><br/>
         <input type="checkbox" name="c1" value="3"><b>3</b></input><br/>
         <input type="submit" value="Ответить"/>
     </form>
+
+    <form class="oleg2" method="get" action="chooseTextColor">
+        <p>Введите текст и выберете цвет, который вы хотите отобразить</p>
+        <input type="text" name="justText"/><br>
+        <input type="radio" name="color" value="red"><b>red</b></input><br/>
+        <input type="radio" name="color" value="green"><b>green</b></input><br/>
+        <input type="radio" name="color" value="blue"><b>blue</b></input><br/>
+        <input type="submit" value="Подтвердить"/>
+    </form>
+
+    <form class="oleg3" method="post" action="registration">
+        <p>Регистрация</p>
+        <p>Name:</p>
+        <input type="text" name="login"/><br/>
+        <p>Password:</p>
+        <input type="password" name="password"/><br/>
+        <p>Valid password:</p>
+        <input type="password" name="passwordValid"/><br/><br/>
+        <input type="submit" value="Зарегистрировать"/>
+    </form>
+
 </body>
 </html>
